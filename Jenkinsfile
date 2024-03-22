@@ -20,7 +20,7 @@ node {
   
     stage('deploy') {
       def resourceGroup = 'jenkins-get-started-rg'
-      def webAppName = 'xiamomo143'
+      def webAppName = 'xiamomo'
       // login Azure
       withCredentials([usernamePassword(credentialsId: 'AzureServicePrincipal', passwordVariable: 'AZURE_CLIENT_SECRET', usernameVariable: 'AZURE_CLIENT_ID')]) {
        sh '''
